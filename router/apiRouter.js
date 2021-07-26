@@ -12,7 +12,7 @@ router.get('/calculate/:value1/:value2',(req,res)=>{
 
     const result = apiController.calculate2values(a,b)
 
-    res.send(`${a} + ${b} = ${result}`)
+    res.send(`${a} + ${b} = ${result + 1}`)
 })
 
 module.exports = router;
